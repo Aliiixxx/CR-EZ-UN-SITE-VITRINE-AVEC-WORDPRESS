@@ -1,0 +1,15 @@
+2023-10-27T03:39:39+00:00 CRITICAL Uncaught Error: Attempt to assign property "page_template" on null in C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-includes\post.php:4628
+Stack trace:
+#0 C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-includes\post.php(4855): wp_insert_post(Array, false, true)
+#1 C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-admin\includes\post.php(1965): wp_update_post(Array)
+#2 C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\core\base\document.php(560): wp_create_post_autosave(Array)
+#3 C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\core\documents-manager.php(530): Elementor\Core\Base\Document->get_autosave(1, true)
+#4 [internal function]: Elementor\Core\Documents_Manager->ajax_save(Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#5 C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-content\plugins\elementor\core\common\modules\ajax\module.php(176): call_user_func(Array, Array, Object(Elementor\Core\Common\Modules\Ajax\Module))
+#6 C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(310): Elementor\Core\Common\Modules\Ajax\Module->handle_ajax_request('')
+#7 C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-includes\class-wp-hook.php(334): WP_Hook->apply_filters('', Array)
+#8 C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-admin\admin-ajax.php(188): do_action('wp_ajax_element...')
+#10 {main}
+  thrown in C:\Users\Alix\Local Sites\laviedesplantes\app\public\wp-includes\post.php on line 4628
+
